@@ -1,0 +1,93 @@
+
+14 May at 18:19
+
+1778771887602.png
+Create web that looks like that
+
+
+Thought for 4s
+Created newspaper-style site
+Built a classic newspaper-style site "Ngetich" with navy header, breaking-news bar, hero + sidebar layout, three-column section grid, and a full article page with byline, drop-cap, comments and related stories — matching your reference.
+
+14 May at 18:28
+Can I upload it to GitHub?
+
+Yes! Click the GitHub button in the top-right of the Lovable editor (or use the + menu → GitHub → Connect project) to authorize the Lovable GitHub App and create a repo. After that, changes sync both ways automatically.
+
+14 May at 18:30
+Connect my GitHub account to sync this project to a new repository.
+
+GitHub connection is handled directly in the Lovable UI, not through me. Here's how:
+
+Click the GitHub button in the top-right of the editor (or + menu → GitHub → Connect project)
+Authorize the Lovable GitHub App
+Pick the account/org for the new repo
+Click Create Repository
+After that, changes sync both ways automatically.
+
+14 May at 18:40
+Where is lovable ui
+
+The GitHub button is in the Lovable editor UI (not in your app's preview). Here's where to find it:
+
+Desktop: Click the + button in the chat input (bottom-left) → GitHub → Connect project.
+
+Mobile: Tap the + button in the bottom-left (Chat mode) → GitHub.
+
+Then authorize the Lovable GitHub App and create the repo — sync runs both ways after that.
+
+
+Ask Lovable...
+
+
+The user is asking for a news site based on a mockup they've shared, so I'll build it directly using that visual reference as my guide.
+
+
+
+
+
+src/styles.css
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap');
+@theme inline {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+@custom-variant dark (&:is(.dark *));
+src/styles.css
+}
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 0.25rem;
+  --background: oklch(0.99 0.003 90);
+  --foreground: oklch(0.15 0.02 260);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.15 0.02 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.129 0.042 264.695);
+  --primary: oklch(0.208 0.042 265.755);
+  --primary-foreground: oklch(0.984 0.003 247.858);
+  --secondary: oklch(0.968 0.007 247.896);
+  --secondary-foreground: oklch(0.208 0.042 265.755);
+  --muted: oklch(0.968 0.007 247.896);
+  --muted-foreground: oklch(0.554 0.046 257.417);
+  --accent: oklch(0.968 0.007 247.896);
+  --accent-foreground: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.15 0.02 260);
+  --primary: oklch(0.25 0.08 255);
+  --primary-foreground: oklch(0.98 0.003 90);
+  --secondary: oklch(0.95 0.01 90);
+  --secondary-foreground: oklch(0.25 0.08 255);
+  --muted: oklch(0.96 0.005 90);
+  --muted-foreground: oklch(0.45 0.02 260);
+  --accent: oklch(0.55 0.22 28);
+  --accent-foreground: oklch(0.98 0.003 90);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.984 0.003 247.858);
+  --border: oklch(0.929 0.013 255.508);
